@@ -68,3 +68,32 @@
   height: 100%;
   object-fit: fill;
 }
+
+.map-one {
+    grid-area: detail;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-two {
+    grid-area: map;
+}
+
+.map {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "detail map"
+    ;
+}
+@media screen and (max-width: 768px) {
+    .map {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+          "detail"
+          "map"
+        ;
+      }
+    }
