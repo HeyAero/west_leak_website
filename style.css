@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+nav a {
+  color: black;
+}
+
+nav a:hover,
+nav a:active {
+  color: #af0000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about {
+  background-color: #f8f7f3;
+}
+
+.visit {
+  background-color: #f8f7f3;
+}
+
+hr {
+  margin: 0;
+  width: 250px;
+  border-top: 5px solid #af0000;
+}
+
+.about-card {
+  margin: 50px;
+  background-color: white;
+  z-index: 5;
+}
+
+.visit-card {
+  margin: 50px;
+  background-color: white;
+  z-index: 5;
+}
+
+.landing {
+  overflow: hidden;
+  height: 50vh;
+}
+
+.one {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/97/West_Leake_from_track_on_Fox_Hill_-_geograph.org.uk_-_1298823.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1280px 960px;
+}
+
+.card-image {
+  object-fit: fill;
+  left: -100px;
+  z-index: 0;
+}
+
+.visit-image {
+  object-fit: fill;
+  left: 100px;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 990px) {
+  .card-image {
+    top: -100px;
+    left: 0;
+  }
+
+  .card-image img {
+    width: 100%;
+  }
+
+  .visit-image {
+    top: 100px;
+    left: 0;
+  }
+
+  .visit-image img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  hr {
+    display: none;
+  }
+
+  .about > div {
+    padding: 0 25px 0 25px;
+  }
+}
