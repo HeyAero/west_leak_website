@@ -29,3 +29,15 @@ hr {
   margin: 50px;
   background-color: white;
 }
+
+.landing {
+  overflow: hidden;
+  height: 50vh;
+}
+
+.one {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/97/West_Leake_from_track_on_Fox_Hill_-_geograph.org.uk_-_1298823.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1280px 960px;
+}
