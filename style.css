@@ -44,14 +44,28 @@ hr {
 }
 
 .card-image {
-  overflow: hidden;
+  object-fit: fill;
   left: -100px;
   z-index: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 990px) {
   .card-image {
     top: -100px;
     left: 0;
+  }
+
+  .card-image img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  hr {
+    display: none;
+  }
+
+  .about > div {
+    padding: 0 25px 0 25px;
   }
 }
