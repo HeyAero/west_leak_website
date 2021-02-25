@@ -1,0 +1,41 @@
+.grid .one {
+    grid-area: main;
+  }
+  .grid .two {
+    grid-area: sub-1;
+  }
+  .grid .three {
+    grid-area: sub-2;
+  }
+  .grid .four {
+    grid-area: sub-3;
+  }
+  .grid .five {
+    grid-area: sub-4;
+  }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "main main sub-1 sub-2"
+    "main main sub-3 sub-4";
+}
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "main"
+        "sub-1"
+        "sub-2"
+        "sub-3"
+        "sub-4";
+  }
+}
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
