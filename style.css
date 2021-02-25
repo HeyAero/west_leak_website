@@ -28,6 +28,7 @@ hr {
 .about-card {
   margin: 50px;
   background-color: white;
+  z-index: 5;
 }
 
 .landing {
@@ -40,4 +41,17 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1280px 960px;
+}
+
+.card-image {
+  overflow: hidden;
+  left: -100px;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .card-image {
+    top: -100px;
+    left: 0;
+  }
 }
