@@ -14,3 +14,18 @@ nav a:active {
   font-weight: 700;
   text-decoration: none;
 }
+
+.about {
+  background-color: #f8f7f3;
+}
+
+hr {
+  margin: 0;
+  width: 250px;
+  border-top: 5px solid #af0000;
+}
+
+.about-card {
+  margin: 20px;
+  background-color: white;
+}
